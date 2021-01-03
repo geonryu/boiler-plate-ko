@@ -31,6 +31,6 @@ const userSchema = mongoose.Schema({
     }//token 유효기간
 });//schema
 
-const User = mongo.model('User', userSchema)//스키마를 모델로 감싸줌
+const User = mongoose.model('User', userSchema)//스키마를 모델로 감싸줌
 
-module.exports = { User }
+module.exports = {User}
